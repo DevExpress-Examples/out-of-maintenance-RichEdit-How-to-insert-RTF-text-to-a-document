@@ -14,4 +14,5 @@ To implement this scenario, initiate a RichEdit custom callback via the client\-
 To insert this text at the current caret position in the middle of a document text, obtain this position on the client side by using the [RichEditSelection.intervals](https://documentation.devexpress.com/#AspNet/DevExpressWebASPxRichEditScriptsRichEditSelection_intervalstopic) array object and pass it to the server as a parameter of the [MVCxClientRichEdit.PerformCallback](https://docs.devexpress.com/AspNet/js-MVCxClientRichEdit.PerformCallback(data)) method. Then, access this passed value in the action method specified in CustomActionRouteValues and use it to modify the current document position via the [Document.CreatePosition](https://documentation.devexpress.com/CoreLibraries/DevExpress.XtraRichEdit.API.Native.SubDocument.CreatePosition.method) method before inserting RTF text.
 
 ***See also:***
+
 [ASPxRichEdit - How to insert RTF text to a document](https://www.devexpress.com/Support/Center/Example/Details/T532651/aspxrichedit-how-to-insert-rtf-text-to-a-document)
