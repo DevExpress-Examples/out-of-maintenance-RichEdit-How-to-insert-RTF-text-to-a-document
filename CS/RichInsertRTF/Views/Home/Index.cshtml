@@ -1,0 +1,36 @@
+@{
+    ViewBag.Title = "RichEdit - How to insert RTF text to a document";
+}
+
+<script type="text/javascript">
+    function onClientButtonClick(s, e) {
+        var startPosition = RichEdit.selection.intervals[0].start;
+        var rtf = RichEdit.cpRtf;
+        RichEdit.commands.insertRtf.execute(rtf, startPosition);
+    }
+    function onServerButtonClick(s, e) {
+        var startPosition = RichEdit.selection.intervals[0].start;
+        RichEdit.PerformCallback({ position: startPosition });
+    }
+</script>
+
+@using (Html.BeginForm())
+{
+    @Html.Action("RichEditPartial")
+}
+
+@Html.DevExpress().Button(button =>
+{
+    button.Name = "ClientButton";
+    button.Text = "Insert RTF text on the client side";
+    button.UseSubmitBehavior = false;
+    button.ClientSideEvents.Click = "onClientButtonClick";
+}).GetHtml()
+
+@Html.DevExpress().Button(button =>
+{
+    button.Name = "ServerButton";
+    button.Text = "Insert RTF text on the server side";
+    button.UseSubmitBehavior = false;
+    button.ClientSideEvents.Click = "onServerButtonClick";
+}).GetHtml()

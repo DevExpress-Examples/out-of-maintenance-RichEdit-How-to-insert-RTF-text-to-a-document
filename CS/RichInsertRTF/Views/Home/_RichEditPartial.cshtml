@@ -1,0 +1,23 @@
+@model RichInsertRTF.Models.RichEditData
+@{
+    var rich = Html.DevExpress().RichEdit(settings =>
+    {
+        settings.Name = "RichEdit";
+        settings.CallbackRouteValues = new { Controller = "Home", Action = "RichEditPartial" };
+        settings.CustomActionRouteValues = new { Controller = "Home", Action = "RichEditCustomPartial" };
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.Height = 500;
+        settings.ReadOnly = false;
+        settings.RibbonMode = RichEditRibbonMode.Ribbon;
+        settings.WorkDirectory = "~/App_Data/WorkDirectory";
+        settings.CustomJSProperties = (sender, e) =>
+        {
+            e.Properties["cpRtf"] = ViewData["RTF"];
+        };
+    });
+    if (Model != null)
+    {
+        rich.Open(Model.DocumentId, Model.DocumentFormat, () => { return Model.Document; });
+    }
+}
+@rich.GetHtml()

@@ -1,0 +1,1 @@
+<%@ Application Codebehind="Global.asax.cs" Inherits="RichInsertRTF.MvcApplication" Language="C#" %>
