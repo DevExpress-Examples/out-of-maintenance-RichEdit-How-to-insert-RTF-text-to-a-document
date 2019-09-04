@@ -1,9 +1,9 @@
 *Files to look at:*
 
- - Index.cshtml (VB: Index.vbhtml)
- - _RichEditParial.cshtml (VB: RichEditPartial.vbhtml)
- - HomeController.cs (VB: HomeController.vb)
- - RichEditData.cs (VB: RichEditData.vb)
+ - [Index.cshtml](CS/RichInsertRTF/Views/Home/Index.cshtml) (VB: [Index.vbhtml](VB/RichInsertRTFVB/Views/Home/Index.vbhtml))
+ - [_RichEditPartial.cshtml](CS/RichInsertRTF/Views/Home/_RichEditPartial.cshtml) (VB: [_RichEditPartial.vbhtml](VB/RichInsertRTFVB/Views/Home/_RichEditPartial.vbhtml))
+ - [HomeController.cs](CS/RichInsertRTF/Controllers/HomeController.cs) (VB: [HomeController.vb](VB/RichInsertRTFVB/Controllers/HomeController.vb))
+ - [RichEditData.cs](CS/RichInsertRTF/Models/RichEditData.cs) (VB: [RichEditData.vb](VB/RichInsertRTFVB/Models/RichEditData.vb))
 
 # RichEdit - How to insert RTF text to a document
 
