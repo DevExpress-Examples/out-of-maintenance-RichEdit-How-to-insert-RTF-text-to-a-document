@@ -1,7 +1,7 @@
 *Files to look at:*
 
- - Index.cshtml (VB: Index.vbhtml)
- - _RichEditParial.cshtml (VB: RichEditPartial.vbhtml)
+ - [Index.cshtml](CS/RichInsertRTF/Views/Home/Index.cshtml) (VB: [Index.vbhtml](VB/RichInsertRTFVB/Views/Home/Index.vbhtml))
+ - _RichEditParial.cshtml (VB: _RichEditPartial.vbhtml)
  - HomeController.cs (VB: HomeController.vb)
  - RichEditData.cs (VB: RichEditData.vb)
 
