@@ -6,6 +6,9 @@
  - [RichEditData.cs](CS/RichInsertRTF/Models/RichEditData.cs) (VB: [RichEditData.vb](VB/RichInsertRTFVB/Models/RichEditData.vb))
 
 # RichEdit - How to insert RTF text to a document
+<!-- run online -->
+**[[Run Online]](https://codecentral.devexpress.com/206129792/)**
+<!-- run online end -->
 
 Starting with version 18.1, the RichEdit extension provides the [insertRtf](https://docs.devexpress.com/AspNet/js-RichEditCommands.insertRtf) command, which allows you to add formatted RTF content at the specified position.  
 In versions prior to 18.1, RichEdit doesn't provide a functionality to insert RTF formatted text on the client side so that this format is applied automatically. This example demonstrates a workaround that allows you to insert formatted RTF text to the current document on a button click via a RichEdit callback.  
