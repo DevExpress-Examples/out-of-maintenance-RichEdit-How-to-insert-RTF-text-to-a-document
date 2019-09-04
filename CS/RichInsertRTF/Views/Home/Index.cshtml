@@ -8,6 +8,7 @@
         var rtf = RichEdit.cpRtf;
         RichEdit.commands.insertRtf.execute(rtf, startPosition);
     }
+	
     function onServerButtonClick(s, e) {
         var startPosition = RichEdit.selection.intervals[0].start;
         RichEdit.PerformCallback({ position: startPosition });
